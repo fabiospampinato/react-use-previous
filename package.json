@@ -2,7 +2,7 @@
   "name": "react-use-previous",
   "repository": "github:fabiospampinato/react-use-previous",
   "description": "React hook for remembering a previous value.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "main": "dist/index.js",
   "exports": "./dist/index.js",
