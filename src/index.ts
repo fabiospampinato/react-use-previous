@@ -3,19 +3,21 @@
 
 import {useEffect, useRef} from 'react';
 
-/* USE PREVIOUS */
+/* MAIN */
 
-function usePrevious<T extends unknown> ( value: T ): React.MutableRefObject<T | undefined>  {
+const usePrevious = <T> ( value: T ): React.MutableRefObject<T | undefined> => {
 
   const ref = useRef<T> ();
 
   useEffect ( () => {
+
     ref.current = value;
+
   }, [value] );
 
   return ref;
 
-}
+};
 
 /* EXPORT */
 
